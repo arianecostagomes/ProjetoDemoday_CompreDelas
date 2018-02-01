@@ -1,0 +1,97 @@
+.coluna{
+	/*height: 30px;*/
+	/*background-color: red;*/
+	text-align: center;
+}
+
+.espacamento{
+	padding-top: 5%;
+/*	margin-bottom: 10%;
+*/}
+
+.alinhamento{
+	display: flex;
+}
+
+nav{
+	box-shadow: 1px 0px 10px black;
+	background-color: #D2691E;
+	font-size: 90%;
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
+nav a{
+	color: rgb(212, 27, 58);
+	text-decoration: none;
+	font-family: 'Dancing Script', cursive;
+	font-size: 180%;
+}
+
+nav ul{
+	float: right;
+	margin-top: 23px;
+	margin-right: 40px;
+}
+
+nav ul li{
+	display: inline;
+	margin: 15px;
+}
+
+h2{
+	font-family: 'Dancing Script', cursive;
+ 	font-style: bold;
+	color: black;
+	font-size: 180%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+section{
+	padding-top: 2%;
+}	
+
+
+section h2{
+	margin-bottom: 2%;
+}
+
+
+.agenda_conteudo{
+	display: flex;
+}
+
+
+.footer{
+	background-color: #f11a3e;
+}
+
+.footer-titulo {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+	padding: 20px;
+	margin-left: 15px;
+    text-transform: uppercase;
+
+footer ul{
+    list-style:none;
+    margin:0 auto;
+    display:inline;
+    padding-top:20px;
+}
+
+footer ul li{
+	float:left;
+	margin: 15px;
+}
+
+
+a{
+	text-decoration: none;
+	color:white;
+}
