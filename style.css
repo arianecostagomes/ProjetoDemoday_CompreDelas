@@ -1,73 +1,186 @@
-.coluna{
-	/*height: 30px;*/
-	/*background-color: red;*/
-	text-align: center;
+*{
+	font-family: 'Montserrat', sans-serif;
 }
-
-.espacamento{
-	padding-top: 5%;
-/*	margin-bottom: 10%;
-*/}
 
 .alinhamento{
 	display: flex;
 }
 
+
+
+
+
+/* BARRA DE NAVEGAÇÃO */
 nav{
 	box-shadow: 1px 0px 10px black;
-	background-color: #D2691E;
-	font-size: 90%;
-	height: 75px;
+	background-color: #25b49c;
+	height: 65px;
 	width: 100%;
 	position: fixed;
 	z-index: 1;
 }
+	
+.nav-img{
+	width: 2.8%;
+	height: 45px;
+	margin-left: 10px;
+	margin-top: -8px;
+}
+
+.navbar-brand{
+	color: white;
+	font-size: 150%;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top: 12px;
+}
 
 nav a{
-	color: rgb(212, 27, 58);
-	text-decoration: none;
-	font-family: 'Dancing Script', cursive;
-	font-size: 180%;
+	color: white;
+	font-size: 150%;	
 }
 
 nav ul{
 	float: right;
-	margin-top: 23px;
-	margin-right: 40px;
+	margin-top: 17px;
+	margin-right: 10px;	
 }
 
 nav ul li{
 	display: inline;
-	margin: 15px;
+	margin: 10px;
 }
 
+
+
+/* HEADER */
+header{
+	background-image: url("img/capa_dialogo.jpg");
+	background-repeat: no-repeat;
+	background-position: center ;
+	background-size: 100% auto;
+	width: 100%;
+	padding: 33%;
+}
+
+
+
+/* SECTION "VOCÊ..." */
 h2{
-	font-family: 'Dancing Script', cursive;
+	/* padding-left: 18px; */
  	font-style: bold;
 	color: black;
-	font-size: 180%;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	font-size: 250%;
+	padding-top: 50px;
+	margin-bottom: 15px;
+}
+
+#busca{
+	background-color:#bbbbbb85;
+	margin-top: -55px;  
+}
+
+.descricao{
+    font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.btn{
+	border-radius: 50px;
+	height: 45px;
+	color: white;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+
+.btn-busca{
+	background-color: #eb3553;
+	width: 360px;
+	margin-left: 265px; 
+}
+
+.btn-cadastro{
+	background-color: #eb3553;
+	width: 390px;
+	margin-left: 85px; 
+}
+
+.btn-avancar{
+	background-color: #eb3553;
+	width: 158px;
+	margin-left: 0px;
+	margin-bottom: 100px;
+
 }
 
 
-section{
-	padding-top: 2%;
-}	
 
-
-section h2{
-	margin-bottom: 2%;
+/* SECTION "NOVIDADES" */
+.btn-leiamais{
+	background-color: #eb3553;
+	width: 120px;
+	margin-left: 195px;
 }
 
 
-.agenda_conteudo{
+
+/* EVENTOS */
+
+.card {
+	display: flex;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	min-width: 0;
+	border-radius: 5px; 
+	margin-bottom: 200px;	
+}
+
+.card-text {
+	text-align: justify;
+	
+} 
+
+.eventos{
+	display: flex;
+}
+
+.novidades{
 	display: flex;
 }
 
 
+
+
+/* FORMULÁRIO */ 
+
+#faleconosco{
+	display: flex;
+}
+
+/* @media (min-width: 768px) */
+.col-sm-6 {
+    width: 50%;
+}
+
+
+
+
+
+/* INFORMAÇÕES PESQUISA EMPRESA */ 
+.empresas_conteudo{
+	display: flex;
+	margin-right: 155px;
+}
+
+
+
+/* FOOTER */
 .footer{
-	background-color: #f11a3e;
+	background-color:#25b49c;
+	padding: 20px;
 }
 
 .footer-titulo {
@@ -76,13 +189,19 @@ section h2{
     color: #ffffff;
 	padding: 20px;
 	margin-left: 15px;
-    text-transform: uppercase;
+	text-transform: uppercase;	
+}
 
-footer ul{
-    list-style:none;
-    margin:0 auto;
+.footer-itens{
+	display: flex;
+	margin-left: 450px;
+}
+
+.footer-ul {
+    list-style: none;
+    margin: 0 auto;
     display:inline;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 footer ul li{
@@ -90,8 +209,67 @@ footer ul li{
 	margin: 15px;
 }
 
-
 a{
 	text-decoration: none;
 	color:white;
 }
+
+
+/* BUSCA.HTML */
+.espacamento{
+	padding-top: 60px;
+	margin-bottom: -30px;
+}
+
+.segmentos{
+    font-size: 18px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+.logo1{
+	vertical-align: middle;
+	width: 70%;
+	padding-top: 15px;
+	
+}
+
+.empresa-descricao{
+	margin-top: 25px;
+	padding-bottom: 100px;
+	display: flex;
+	font-size: 18px;
+	margin-bottom: -150px;
+	display: inline;
+	text-align: justify;
+}	
+
+.btn-saibamais{
+	background-color: #eb3553;
+	width: 130px;
+	margin-top: 10px;
+	margin-left: 120px;
+}
+
+
+h3{
+	/* padding-left: 18px; */
+ 	font-style: bold;
+	color: black;
+	font-size: 202%;
+	padding-top: 50px;
+	margin-bottom: 15px;
+}
+
+
+.qual_categoria{
+	padding-top: 40px;
+    font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.quadro_empresas{
+	border: 1px inset #000;	
+	margin-bottom: 70px;
+}
+

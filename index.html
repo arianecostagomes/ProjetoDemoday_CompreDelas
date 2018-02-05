@@ -1,92 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>A.P.E</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Compre Delas</title>
 
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-	<nav>
-		<ul>
-			<li><a href="#">Usuário</a></li>
-			<li><a href="#">Empreendedora</a></li>
-			<li><a href="#">Novidades</a></li>
-			<li><a href="#">Agenda</a></li>
-			<li><a href="#">Fale Conosco</a></li>
-		</ul>
-	</nav>
-   	<section id="Novidades" class="container">
-		<div class="row espacamento">
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+		
+		<!-- FONTE --> 
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+		<!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!-- FONT AWESOME ICONS -->
+        <script src="fontawesome/svg-with-js/js/fontawesome-all.js"></script>
+        
+        <!-- ANGULAR.JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+
+	</head>
+
+	
+
+
+<!-- BARRA DE NAVEGAÇÃO -->
+	<body>
+		<nav>
+			<img class="nav-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Symbol_venus.svg/150px-Symbol_venus.svg.png" width="30" height="30" class="d-inline-block align-top" alt="">
+			<a class="navbar-brand" href="#">Compre Delas</a>
+			<ul>
+				<a href="#busca">Busca</a>
+				<li><a href="#cadastro">Cadastre-se</a></li>
+				<li><a href="#novidades">Novidades</a></li>
+				<li><a href="#eventos">Eventos</a></li>
+				<li><a href="#faleconosco">Fale Conosco</a></li>
+			</ul>
+		</nav>
+
+
+
+<!-- CABAÇALHO COM IMAGEM FIXA E DESCRIÇÃO -->
+	<header>
+			<i class="fas fa-camera-retro fa-5x"></i> 
+	</header>
+
+
+
+<!-- VOCÊ... -->
+	<section id="busca" class="container-fluid">
+		<h2 class=container>Você...</h2>
+		<button onclick="clicar" type="button" name="button" class="btn btn-busca"><a href="busca.html" target="_blank"> Procura um serviço? </a></button>
+		<button onclick="clicar" type="button" name="button" class="btn btn-cadastro"><a href="cadastro.html" target="_blank"> É uma pequena empreendedora? </a></button>
+
+	</section>
+
+
+
+	
+
+<!-- NOVIDADES -->
+   	<section id="novidades" class="container">
+	
 			<h2>Novidades</h2>
 			<br>
 			<div class="alinhamento">
 			<div class="card-deck">
 		    <div class="card">
-		    <img class="card-img-top" src="http://nossacausa.com/wp-content/uploads/2016/07/Empoderamento-Feminino.png" alt="Card image cap">
+		    <img class="card-img-top" src="img/perfil_eh.png" alt="Card image cap">
 		    <div class="card-body">
-		    	<h5 class="card-title">Mas afinal, o que é empoderamento feminino?</h5>
-		    	<p class="card-text">Empoderamento feminino. Este foi o termo mais procurado no Brasil em 2016, segundo um estudo sobre tendências visuais divulgado pelo site Shutterstock.</p>
-		    	<a href="https://impacthubcuritiba.com/empoderamento-feminino/" class="btn btn-primary">Leia mais</a>
+		    	<h5 class="card-title">Estúdio Hermanas - bordados</h5>
+		    	<p class="card-text">O Estúdio Hermanas nasceu da vontade de duas irmãs se juntarem para fazerem o que mais amam. Juliana Mazzo é Designer e apaixonada por caligrafia e lettering. Letícia Mazzo é Arquiteta e apaixonada por desenho. O Estúdio é a união dessas nossas paixões materializadas no papel ou tecido. </p>
+		    	<a href="http://www.estudiohermanas.com.br/" class="btn btn-leiamais">Leia mais</a>
 		    </div>
 		 	</div>
 
 
 			<div class="card">
-		    <img class="card-img-top" src="https://abrilveja.files.wordpress.com/2017/03/mulher-presidente-empresa.jpg?quality=70&strip=info&w=1000&h=666&crop=1" alt="Card image cap">
+		    <img class="card-img-top" src="img/perfil_mentha1.jpg" alt="Card image cap">
 		    <div class="card-body">
-		    	<h5 class="card-title">Brasil tem 16% de mulheres em cargos de CEO</h5>
-		    	<p class="card-text">As mulheres ainda são minoria em cargos de comando dentro das empresas. No Brasil, o índice de mulheres na função de CEO ou de diretora executiva atingiu 16% em 2016, um aumento de cinco pontos percentuais em relação a 2015 (11%).</p>
-				<a href="https://veja.abril.com.br/economia/dia-da-mulher-brasil-tem-16-de-mulheres-em-cargos-de-ceo/" class="btn btn-primary">Leia mais</a>    
+		    	<h5 class="card-title">Coletivo Mentha - casa</h5>
+		   		<p class="card-text">O Mentha é uma iniciativa de produção artesanal independente. Valorizamos o trabalho manual, um processo mais calmo e cuidadoso de criação. Cada detalhe conta, cada carinho depositado em acabamentos mais ainda. Todas as nossas peças são únicas, feitas com amor e com o toque de simplicidade.</p>
+		    	<a href="http://www.coletivomentha.com/index.html" class="btn btn-leiamais">Leia mais</a>
+		    </div>
 			</div>
-		  	</div>
 
 
 			<div class="card">
-		    <img class="card-img-top" src="https://www.altoastral.com.br/wp-content/uploads/2016/09/capa-livros-frida-kahlo-para-meninos-e-meninas-esperanca-e-uma-menina-que-vende-frutas-malala-divulgacao.jpg" alt="Card image cap">
-		    <div class="card-body">
-		    	<h5 class="card-title">6 livros infantis para empoderar as meninas</h5>
-		   		<p class="card-text">Para as meninas crescerem fortes e independentes, você pode incentivá-las através dos livros. Conheça 6 livros infantis para inspirar as pequenas!</p>
-		    	<a href="https://www.altoastral.com.br/6-livros-infantis-empoderar-meninas/" class="btn btn-primary">Leia mais</a>
-		    </div>
+			<img class="card-img-top" src="img/perfil_mt.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Maria Tangerina - bolsas</h5>
+				<p class="card-text">A Maria Tangerina nasceu em 2013, fruto de um projeto pessoal da Priscila Cortez, fundadora da marca. Ainda no começo a Pri fazia tudo sozinha e produzia todas as peças por encomenda. Foi aí que conheceu o trabalho do Design Possível, que a apresentou ao Cardume de Mães e à Economia Solidária.</p>
+				<a href="https://www.mariatangerina.com.br/" class="btn btn-leiamais">Leia mais</a>    
 			</div>
-	
+			</div>
+
 	</section>
 
 
-    <section id="agenda" class="container">
-	<div class="row espacamento">
-		<h2>Agenda</h2>
-	</div>
-			
-	<div class="row" id="agenda_conteudo">
 
-		<div class="card bg-transparent text-black mb-3" style="max-width: 20rem; margin-left: 3%;">
-			<h5 class="card-header bg-transparent border-success">Pop Plus</h5>
-			<img class="card-img" src="https://3.bp.blogspot.com/-Q8fWlpRiiw0/WiafwNMoNLI/AAAAAAAAKlE/fEbd37Eh11MU6V2qjk0F8LO15buA_9gbgCLcBGAs/s1600/FB_IMG_1512430055201.jpg" alt="Card image">
+
+<!-- TESTE
+<section id="eventos" class="container">
+	<h2>XXXXXXXXXXXX</h2>
+
+	<div class="card" style="width: 18rem;">
+		<img class="card-img-top" src="..." alt="Card image cap">
+		<div class="card-body">
+		  <h5 class="card-title">Card title</h5>
+		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		  <a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+	  </div>
+</section> -->
+
+
+
+<!-- EVENTOS -->
+    <section id="eventos" class="container">
+		
+		<h2>Eventos</h2>
+		<br>
+		<div class="alinhamento">
+
+
+		<div class="card bg-transparent text-black mb-3" style="max-width: 23rem">
+			<h5 class="card-header bg-transparent border-success">Jardim Secreto Fair</h5>
+			<img class="card-img" src="img/eventos_jardim.png" alt="Card image">
 			<div class="card-img-overlay">
 	  		</div>
 		</div>
 
 
-		<div class="card bg-transparent text-black mb-3" style="max-width: 20rem; margin-left: 5%;">
-			<h5 class="card-header bg-transparent border-success">Tecnologia para mulheres</h5>
-			<img class="card-img" src="https://s3.amazonaws.com/jgdprod-blogs-us/blogs/wp-content/uploads/sites/116/2017/09/ByteGirl.jpeg" alt="Card image">
+		<div class="card bg-transparent text-black mb-3" style="max-width: 23rem; margin-left: 5%">
+			<h5 class="card-header bg-transparent border-success">Lobo Centro Criativo</h5>
+			<img class="card-img" src="img/eventos_lobo.jpg" alt="Card image">
 			<div class="card-img-overlay">
 	  		</div>
 		</div>
 
 
-		<div class="card bg-transparent text-black mb-3" style="max-width: 20rem; margin-left: 5%;">
-			<h5 class="card-header bg-transparent border-success">Mulheres negras</h5>
-			<img class="card-img" src="http://3.bp.blogspot.com/-13C9jSpXxY4/VaU0ASAp_VI/AAAAAAAAJgo/scwIn3QZuyo/s1600/11539870_10205385323684879_146251551_o.jpg" alt="Card image">
+		<div class="card bg-transparent text-black mb-3" style="max-width: 23rem; margin-left: 5%">
+			<h5 class="card-header bg-transparent border-success">Loja Colaborativo Endossa</h5>
+			<img class="card-img" src="img/eventos_endossa.jpg" alt="Card image">
 			<div class="card-img-overlay">
 	  		</div>
 		</div>
@@ -94,11 +152,18 @@
 </section>     
 		
 
-<section id="faleconosco" class="container">
-		<div class="row espacamento">
-			<h2>Fale conosco</h2>
-		</div>
-			<h5>Envie suas dúvidas, sugestões e reclamações. Sua opinião é importante para nós!</h5><br>
+
+
+<!-- FORMULÁRIO FALE CONOSCO -->
+<!-- <section id="faleconosco" class="container col-sm-6">
+	<div="row espacamento">
+		<h2>Fale conosco</h2>
+		<br>
+	<div class="row" id="faleconosco">
+
+
+		<div class="faleconosco col-sm-6"></div>
+		<h5>Envie suas dúvidas, sugestões e reclamações. Sua opinião é importante para nós!</h5><br>
 			
 		<form>
 			<div class="form-group">
@@ -121,29 +186,91 @@
 				<label for="exampleFormControlTextarea1">Mensagem</label>
 				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 			</div>
-			   <button type="submit" class="btn btn-primary">Enviar</button>
+
+			<button onclick="clicar" type="button" name="button" class="btn btn-avancar">Enviar</button>
+
 		</form>
 	</section>
-	<br>
+	<br> -->
 
 
-	<footer>
-        
-	<footer class="footer">
-		<div class="contato">
-				<div class="footer-titulo">Nossas redes sociais</div>
-				<ul class="footer-itens">
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Instagram</a></li>		   
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Youtube</a></li>
-				</ul>
+
+
+
+
+
+
+	<!-- FORMULÁRIO FALE CONOSCO -->
+
+
+	<section id="faleconosco" class="container col-sm-6">
+		<div="row espacamento">
+			<h2>Fale conosco</h2>
 		</div>
-	</div>
-	</footer>
+	
+			<h5>Envie suas dúvidas, sugestões e reclamações. Sua opinião é importante para nós!</h5><br>
+				
+			<form>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Nome</label>
+					<input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Nome">
+					<small id="emailHelp" class="form-text text-muted"></small>
+				</div>
+				  
+				<div class="form-group">
+					<label for="exampleInputPassword1">E-mail</label>
+					<input type="email" class="form-control" id="exampleInputPassword1" placeholder="nome@exemplo.com">
+				</div>
+					
+				<div class="form-group">
+					<label for="exampleInputPassword1">Assunto</label>
+					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Sobre o que você deseja falar?">
+				</div>
+		
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Mensagem</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				</div>
+	
+				<button onclick="clicar" type="button" name="button" class="btn btn-avancar">Enviar</button>
+	
+			</form>
+		</section>
+		<br> 
+	
+	
+
+
+<!-- FOOTER -->
+  
+	<footer class="footer">
+			<div class="contato">
+					<div class="footer-titulo">Nossas redes sociais</div>
+					<ul class="footer-itens">
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Instagram</a></li>		   
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Youtube</a></li>
+						<i class="fab fa-facebook-square"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fas fa-camera-retro"></i>	
+					</ul>
+			</div>
+		
 	</footer>
 
-    <!-- Javascript -->
-<script type= "text/javascript" src="script.js"></script>
-</body>
+
+    
+	<!-- Javascript -->
+	<script type= "text/javascript" src="script.js"></script>
+
+
+		<!-- Optional JavaScript -->
+			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+			<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+	
+	</body>
 </html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html ng-app="busca" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Compre Delas</title>
+
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+		
+		<!-- FONTE --> 
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+		<!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!-- FONT AWESOME ICONS -->
+        <script src="fontawesome/svg-with-js/js/fontawesome-all.js"></script>
+        
+        <!-- ANGULAR.JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+
+        <script src="scripts.js"></script>
+
+	</head>
+
+
+<!-- BARRA DE NAVEGAÇÃO -->
+	<body ng-controller="BuscaListaController">
+		<nav>
+            <img class="nav-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Symbol_venus.svg/150px-Symbol_venus.svg.png" width="30" height="30" class="d-inline-block align-top" alt="">
+			<a class="navbar-brand" href="#">Compre Delas</a>
+			<ul>
+				<li><a href="#busca">Busca</a></li>
+				<li><a href="#cadastro">Cadastre-se</a></li>
+				<li><a href="#novidades">Novidades</a></li>
+				<li><a href="#eventos">Eventos</a></li>
+				<li><a href="#faleconosco">Fale Conosco</a></li>
+			</ul>
+        </nav>
+        
+
+
+
+        <!-- PÁGINA PARA SELEÇÃO DO QUE PROCURA -->
+        <section class="container espacamento" id="buscaServicos">
+            <h2>O que você procura?</h2>
+
+            <p class="descricao">Selecione uma categoria e conheça trabalho de diversas pequenas empreendedoras:</p>
+            
+
+            <div>
+
+
+
+                    <div class="form-check segmentos">
+                        <input class="form-check-input" type="radio" name="categorias" ng-model="filtro" value="Acessórios" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Acessórios
+                        </label>
+                    </div>
+                    <div class="form-check segmentos">
+                        <input class="form-check-input" type="radio" name="categorias" ng-model="filtro" value="bordado" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Bordado
+                        </label>
+                    </div>
+                    <div class="form-check segmentos">
+                        <input class="form-check-input" type="radio" name="categorias" ng-model="filtro" value="Casa" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Casa
+                        </label>
+                    </div>
+                    <div class="form-check segmentos">
+                        <input class="form-check-input" type="radio" name="categorias"ng-model="filtro"  value="Gastronomia" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Gastronomia
+                        </label>
+                    </div>
+                    <div class="form-check segmentos">
+                        <input class="form-check-input" type="radio" name="categorias"ng-model="filtro" value="Ilustração" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Ilustração
+                        </label>
+                    </div>
+                    <div class="form-check segmentos">
+                        <input class="form-check-input" type="radio" name="categorias" ng-model="filtro" value="Roupas" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Roupas
+                        </label>
+                    </div>
+
+                    <!-- <button type="button" class="btn btn-avancar" onclick="document.getElementById('mostrarEmpresas').style.display='block'">Avançar</button> -->
+
+
+
+            </div>
+
+        </section> 
+
+
+
+
+        <!-- EMPRESAS -->
+        <section class="container" style="">
+                <div class="row espacamento">
+                    <h2>Empreendedoras Parceiras</h2>
+                </div>
+
+                <p class="qual_categoria">Categoria: {{ filtro }} </p>
+
+                <div class="row quadro_empresas" id="empresa_conteudo" ng-repeat="parceira in parceiras | filter : filtro">
+                    
+                
+                    <div class="logo1 col-sm-4">
+                        <img class="logo1" src="{{ parceira.img }}">
+                    </div>
+
+                    <div class="empresa-descricao col-sm-4">
+                        <p class="bordado"></p>
+                        <p>Nome: {{ parceira.nome }}</p>
+                        <p>Categoria: {{ parceira.categoria }}</p>
+                        <p>Faixa de valor: {{parceira.faixa_valor }}</p>
+                        <p>Localização: {{ parceira.localizacao }}</p>
+                        <a href="{{ parceira.site }}" class="btn btn-saibamais" target="blank">Saiba mais</a>
+                    </div>
+
+                    <div class="empresa-descricao col-sm-4">
+                        <p>{{ parceira.descricao }}</p>
+                    </div>
+                </div>
+            
+            
+        <br>
+
+        </section>
+
+
+
+
+            <!-- Javascript -->
+            <script type= "text/javascript" src="script.js"></script>
+            
+
+
+
+        <!-- FOOTER -->
+        <footer>   
+                <footer class="footer">
+                    <div class="contato">
+                            <div class="footer-titulo">Nossas redes sociais</div>
+                            <ul class="footer-itens">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Instagram</a></li>		   
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Youtube</a></li>
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                            </ul>
+                    </div>
+                </div>
+                </footer>
+                </footer>
+
+
+            
+            <!-- Javascript -->
+            <script type= "text/javascript" src="script.js"></script>
+
+
+                <!-- Optional JavaScript
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+            
+	</body>
+</html>
